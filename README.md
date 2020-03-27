@@ -25,9 +25,9 @@ Out of the box includes all counters for:
 
 1. Copy perf_counter_discovery.ps1 to a folder CustomScripts in your Zabbix Agent directory. eg  
 `C:\Program Files\Zabbix Agent\CustomScripts\perf_counter_discovery.ps1`  
-2. Add the line below to your zabbix_agentd.conf
+2. Add this line to your `zabbix_agentd.conf`  
 `UserParameter=perf_counter.discover[*],powershell -noninteractive -file "C:\Program Files\Zabbix Agent\CustomScripts\perf_counter_discovery.ps1" $1`
-3. Import perf_counter_discovery.xml template to Zabbix
+3. Import `perf_counter_discovery.xml` template to Zabbix
 
 
 ## Adding additional counters <a name = "add"></a>
@@ -38,4 +38,4 @@ Out of the box includes all counters for:
    2. Replace key value with your new counter eg. from `perf_counter.discover[DNS]` to `perf_counter.discover[Tcp_IPv4]`
 3. Create new **Item Prototype** with the below settings:  
    1. Replace **DN** in {#**DN**LA} & {#**DN**NA} with the first two letters of your counter name.  
-For example, if your new counter is Tcp_IPv4 use {#Tcp_IPv4}
+For example, if your new counter is **Tcp_IPv4** use {#**TC**LA} & {#**TC**NA}
