@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>4.4</version>
+    <date>2020-03-27T03:47:50Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Discover Performance Counters</template>
+            <name>Discover Performance Counters</name>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>DHCP Parameters</name>
+                </application>
+                <application>
+                    <name>DNS Parameters</name>
+                </application>
+            </applications>
+            <discovery_rules>
+                <discovery_rule>
+                    <name>Discover DHCP Performance Counters</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>perf_counter.discover[DHCP_Server]</key>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#DHLA}</name>
+                            <type>ZABBIX_ACTIVE</type>
+                            <key>perf_counter[{#DHNA}]</key>
+                            <value_type>FLOAT</value_type>
+                            <applications>
+                                <application>
+                                    <name>DHCP Parameters</name>
+                                </application>
+                            </applications>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>Discover DNS Performance Counters</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>perf_counter.discover[DNS]</key>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>{#DNLA}</name>
+                            <type>ZABBIX_ACTIVE</type>
+                            <key>perf_counter[{#DNNA}]</key>
+                            <value_type>FLOAT</value_type>
+                            <applications>
+                                <application>
+                                    <name>DNS Parameters</name>
+                                </application>
+                            </applications>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+            </discovery_rules>
+        </template>
+    </templates>
+</zabbix_export>
