@@ -4,6 +4,7 @@
 
 - [Limitations](#limits)
 - [About](#about)
+- [Zabbix Version Support](#supported)
 - [Getting Started](#getting_started)
 - [Adding additional counters](#add)
 
@@ -19,6 +20,10 @@ Easily discover performance counters for a chosen class within PerfRawData and a
 Out of the box includes all counters for:
 - DHCP Server (_Win32_PerfRawData_DHCP_Server_)
 - DNS (_Win32_PerfRawData_DNS_DNS_)
+
+
+## Zabbix Version Support <a name = "supported"></a>
+Zabbix 4.4.1
 
 
 ## Getting Started <a name = "getting_started"></a>
