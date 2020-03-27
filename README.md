@@ -23,7 +23,7 @@ Out of the box includes all counters for:
 
 ## Getting Started <a name = "getting_started"></a>
 
-1. Copy perf_counter_discovery.ps1 to a folder CustomScripts in your Zabbix Agent directory. eg  
+1. Copy `perf_counter_discovery.ps1` to folder *CustomScripts* in your Zabbix Agent directory. eg  
 `C:\Program Files\Zabbix Agent\CustomScripts\perf_counter_discovery.ps1`  
 2. Add this line to your `zabbix_agentd.conf`  
 `UserParameter=perf_counter.discover[*],powershell -noninteractive -file "C:\Program Files\Zabbix Agent\CustomScripts\perf_counter_discovery.ps1" $1`
