@@ -9,7 +9,7 @@
 
 
 
-## Limitations <a name - "limits"></a>
+## Limitations <a name = "limits"></a>
 - Does not support two performance counters that start with the same two letters  
 eg. `Tcp_IPv4` & `Tcp_IPv6`. Will be fixed soon!
 
