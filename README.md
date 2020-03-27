@@ -2,17 +2,12 @@
 
 ## Table of Contents
 
-- [Limitations](#limits)
 - [About](#about)
+- [Limitations](#limits)
 - [Zabbix Version Support](#supported)
 - [Getting Started](#getting_started)
 - [Adding additional counters](#add)
 
-
-
-## Limitations <a name = "limits"></a>
-- Does not support two performance counters that start with the same two letters  
-eg. `Tcp_IPv4` & `Tcp_IPv6`. Will be fixed soon!
 
 ## About <a name = "about"></a>
 
@@ -20,6 +15,11 @@ Easily discover performance counters for a chosen class within PerfRawData and a
 Out of the box includes all counters for:
 - DHCP Server (_Win32_PerfRawData_DHCP_Server_)
 - DNS (_Win32_PerfRawData_DNS_DNS_)
+
+
+## Limitations <a name = "limits"></a>
+- Does not support two performance counters that start with the same two letters  
+eg. `Tcp_IPv4` & `Tcp_IPv6`. Will be fixed soon!
 
 
 ## Zabbix Version Support <a name = "supported"></a>
